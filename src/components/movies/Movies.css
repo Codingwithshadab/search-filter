@@ -1,0 +1,56 @@
+
+.search {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: space-between;
+}
+.moviesItems {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.selectItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moviesItems .card{
+    margin-bottom: 15px;
+    width: 20%;
+}
+.moviesItems .card-body{
+    position: relative;
+}
+.moviesItems .card-body .cancel{
+    position: absolute;
+    right: -7px;
+    top: -12px;
+    cursor: pointer;
+    color: #084298;
+    font-size: 20px;
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+.moviesItems .card-body:hover .cancel{
+    opacity: 1;
+}
+
+@media (min-width: 768px ) and (max-width: 992px) {
+    .moviesItems .card{
+        width: 31%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .moviesItems .card{
+        width: 48%;
+    }
+}
+@media (min-width: 320px ) and (max-width: 480px) {
+    .moviesItems .card{
+        width: 100%;
+    }
+}

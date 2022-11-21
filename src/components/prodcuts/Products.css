@@ -1,0 +1,19 @@
+.list-group li{
+    cursor: pointer;
+}
+.list-group-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.list-group-item.reject:before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+}

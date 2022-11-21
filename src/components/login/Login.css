@@ -1,0 +1,14 @@
+
+.logo{
+    color: #fff;
+}
+.topHeader{
+    
+    background-color: #fff;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
