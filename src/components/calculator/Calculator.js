@@ -24,11 +24,13 @@ function Calculator() {
   };
   const generate = () => {
     const obj = {
-      incrementVal : +formVal.inc,
-      decrementVal: +formVal.dec
+      inc : formVal.inc,
+      dec: formVal.dec
     }
     dispatch(updatedVal(obj));
+    // console.log(obj);
   };
+  // console.log(store);
   // get input value
   const handleChange = (event) => {
     const cloneData = { ...formVal };
@@ -38,6 +40,27 @@ function Calculator() {
     setFormVal(cloneData);
   };
 
+// Project upload in git - Done
+// redux - Done
+// react tutorial
+// javascript tutorial
+// mutable and unmutable - Done
+// extension - Done
+// Filter Reduce forEach, Map, - Done
+
+// Workout 
+// Always Smell good
+// Get a good haircut
+// Mainain a good posture
+// Dress Well
+// Eliminated bad habbits
+// Stay Hydrated
+// Travel
+// Be Consistent 
+
+
+
+// live share
   return (
     <>
       <div className="container mt-3">

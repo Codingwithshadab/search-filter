@@ -17,7 +17,7 @@ export const calculatorSlice = createSlice({
             state.value = state.value -  action.payload;
         }),
         updatedVal: ((state, action)=>{
-            state.generatedObj = state.generatedObj +  action.payload;
+            state.generatedObj = action.payload;
         })
     }
 })

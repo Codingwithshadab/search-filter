@@ -1,6 +1,11 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import { listSlice } from "../../list-redux/listSlice";
 import { calculatorSlice } from "./calculatorSlice";
-
+const allReducers = combineReducers({
+    calculatorSlice: calculatorSlice.reducer,
+    listSlice: listSlice.reducer
+})
 export const store = configureStore({ 
-    reducer : calculatorSlice.reducer
+    reducer : allReducers,
+    devTools: process.env.NODE_ENV !== "production"
 })
