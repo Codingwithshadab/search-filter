@@ -6,24 +6,32 @@ export const listSlice = createSlice({
         list: [
             {
                 id: "1",
-                title: "First"
+                title: "An item"
             },
             {
                 id: "2",
-                title: "Second"
+                title: "A second item"
             },
             {
                 id: "3",
-                title: "Third"
+                title: "A third item "
+            },
+            {
+                id: "4",
+                title: "A fourth item "
+            },
+            {
+                id: "5",
+                title: "And a fifth one "
             }
         ]
     },
     reducers : {
         removeItem: ((state, remove)=>{
-            const a = state.list.filter((item)=>{
-                return item.id !== remove.payload //Check type
-            })
-            console.log(remove);
+            const itemId = remove.payload;
+            state.list = state.list.filter((item)=>{
+                return item.id !== itemId;
+            })            
         })
         
     }
